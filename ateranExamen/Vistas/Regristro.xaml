@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ateranExamen.Vistas.Regristro"
+             Title="Regristro">
+    <VerticalStackLayout>
+        <Label 
+            Text="Registro"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label x:Name="lblNombre" 
+               HorizontalTextAlignment="Center"
+               FontSize="15"
+               TextColor="DarkGray"
+            />
+
+
+
+        <Grid Margin="20,35,20,20">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400" />
+                <ColumnDefinition Width="400" />
+            </Grid.ColumnDefinitions>
+
+
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="0" />
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="1"/>
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="2"/>
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="3"/>
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="4"/>
+            
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="0"/>
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="1"/>
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="2"/>
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="3"/>
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="4"/>
+
+            <Label Text="Fecha" TextColor="Red" Grid.Column="0" Grid.Row="0"   />
+            <DatePicker x:Name="dpFecha" Format="MM/dd/yyyy" Grid.Column="1" Grid.Row="0"        Grid.ColumnSpan="2"></DatePicker>
+
+            <Label Text="Pais" TextColor="Red" Grid.Column="0" Grid.Row="1"   />
+            <Picker x:Name="pkPaises" Title="Listado de Paises" TextColor="Blue" Grid.Column="1" Grid.Row="1"  TitleColor="Red">
+                <Picker.Items>
+                    <x:String>Ecuador</x:String>
+                    <x:String>Peru</x:String>
+                    <x:String>Colombia</x:String>
+                    <x:String>Chile</x:String>
+                    <x:String>Argentina</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Ciudades" TextColor="Red" Grid.Column="0" Grid.Row="2"   />
+            <Picker x:Name="pkCiudades" Title="Listado de Ciudades" TextColor="Blue" Grid.Column="1" Grid.Row="2" TitleColor="Red">
+                <Picker.Items>
+                    <x:String>Quito</x:String>
+                    <x:String>Guayaquil</x:String>
+                    <x:String>Cuenca</x:String>
+                    <x:String>AMbato</x:String>
+                    <x:String>Santo Domingo</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Monto Incial" Grid.Column="0" Grid.Row="3"   />
+            <Entry x:Name="txtMinicial"        Keyboard="Numeric"       MaxLength="10"        PlaceholderColor="Blue"   Grid.Column="1" Grid.Row="3"/>
+
+            <Button x:Name="btnMinicial" Text="Monto Inicial" Clicked="btnMinicial_Clicked"  BackgroundColor="Blue" TextColor="White"  Grid.Column="0" Grid.Row="4" />
+            <Entry x:Name="txtPagoMensual"        Keyboard="Numeric"       MaxLength="10"        TextColor="Blue"   Grid.Column="1" Grid.Row="4" IsEnabled="False"/>
+            
+         </Grid>
+
+
+        <Grid Margin="20,35,20,20">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400" />
+                <ColumnDefinition Width="400" />
+                <ColumnDefinition Width="400" />
+
+            </Grid.ColumnDefinitions>
+
+
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="0"/>
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="0"/>
+            <BoxView BackgroundColor="Silver" Grid.Column="2" Grid.Row="0"/>
+            
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="1"/>
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="1"/>
+            <BoxView BackgroundColor="Silver" Grid.Column="2" Grid.Row="1"/>
+
+            <Label Text="Nombre" Grid.Column="0" Grid.Row="0"   />
+            <Label Text="Apellido" Grid.Column="1" Grid.Row="0"   />
+            <Label Text="Edad" Grid.Column="2" Grid.Row="0"   />
+
+            <Entry x:Name="txtNombre" Grid.Column="0" Grid.Row="1" Placeholder="Nombre" PlaceholderColor="Black" />
+            <Entry x:Name="txtApellido" Grid.Column="1" Grid.Row="1" Placeholder="Apellido" PlaceholderColor="Black" />
+            <Entry x:Name="txtEdad" Grid.Column="2" Grid.Row="1" Placeholder="Edad" PlaceholderColor="Black" />
+
+        </Grid>
+
+        <Button Text="Resumen" x:Name="btn_resumen" Clicked="btn_resumen_Clicked" TextColor="White" BackgroundColor="Blue"/>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ateranExamen.Vistas.Resumen"
+             Title="Resumen">
+    <VerticalStackLayout>
+        <Label 
+            Text="Resumen"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+
+        <Grid Margin="20,35,20,20">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400" />
+                <ColumnDefinition Width="400" />
+
+            </Grid.ColumnDefinitions>
+
+
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="0" />
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="0"/>
+
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="1" />
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="1"/>
+            
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="2" />
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="2"/>
+            
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="3" />
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="3"/>
+            
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="4" />
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="4"/>
+            
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="5" />
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="5"/>
+            
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="6" />
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="6"/>
+            
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="7" />
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="7"/>
+            
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="8" />
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="8"/>
+
+            <BoxView BackgroundColor="Silver" Grid.Column="0" Grid.Row="9" />
+            <BoxView BackgroundColor="Silver" Grid.Column="1" Grid.Row="9"/>
+
+
+            <Label Text="Usuario"  Grid.Column="0" Grid.Row="0" />
+            <Label x:Name="lblUser"  Grid.Column="1" Grid.Row="0" />
+
+            <Label Text="Nombre"  Grid.Column="0" Grid.Row="1" />
+            <Label x:Name="lblNombre"  Grid.Column="1" Grid.Row="1" />
+
+            <Label Text="Apellido"  Grid.Column="0" Grid.Row="2" />
+            <Label x:Name="lblApellido"  Grid.Column="1" Grid.Row="2" />
+
+           
+
+            <Label Text="Edad"  Grid.Column="0" Grid.Row="3" />
+            <Label x:Name="lblEdad"  Grid.Column="1" Grid.Row="3" />
+
+            <Label Text="Fecha"  Grid.Column="0" Grid.Row="4" />
+            <Label x:Name="lblFecha"  Grid.Column="1" Grid.Row="4" />
+
+            <Label Text="Ciudad"  Grid.Column="0" Grid.Row="5" />
+            <Label x:Name="lblCiudad"  Grid.Column="1" Grid.Row="5" />
+
+            <Label Text="Pais"  Grid.Column="0" Grid.Row="6" />
+            <Label x:Name="lblPais"  Grid.Column="1" Grid.Row="6" />
+
+            <Label Text="Monto Inicial"  Grid.Column="0" Grid.Row="7" />
+            <Label x:Name="lblPI"  Grid.Column="1" Grid.Row="7" />
+
+            <Label Text="Pago Mensual"  Grid.Column="0" Grid.Row="8" />
+            <Label x:Name="lblPM"  Grid.Column="1" Grid.Row="8" />
+
+            <Label Text="Pago Total"  Grid.Column="0" Grid.Row="9" />
+            <Label x:Name="lblPT"  Grid.Column="1" Grid.Row="9" />
+
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>
